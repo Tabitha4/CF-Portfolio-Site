@@ -1,0 +1,926 @@
+/**** BODY ****/
+
+body {
+	color: #444;
+	font-family: "Raleway", Helvetica, sans-serif;
+	font-size: 13pt;
+	font-weight: 400;
+	line-height: 1.65em;
+	text-align: justify;
+	position: relative;
+}
+
+a {
+	color: #fff;
+}
+
+
+/**** FIXED NAVBAR ****/
+
+.navbar {
+	margin-bottom: 0;
+	position: fixed;
+}
+
+.navbar-brand {
+	padding-left: 25px;
+}
+
+.navbar-default {
+	background-color: black;
+	border: none;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    color: white;
+    padding-right: 25px;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.navbar-nav li a {
+	color: white;
+	letter-spacing: 0.05em;
+}
+
+.navbar-default .navbar-nav .active a,
+.navbar-default .navbar-nav .active a:focus,
+.navbar-default .navbar-nav .active a:hover {
+    color: #fff;
+    background: none;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.navbar-default .navbar-nav a:hover {
+    color: #fff !important;
+    background: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.listItem {
+	-webkit-transition: 600ms ease-in-out;
+	-moz-transition: 600ms ease-in-out;
+	-o-transition: 600ms ease-in-out;
+	-ms-transition: 600ms ease-in-out;
+	transition: 600ms ease-in-out;
+	color: #fff;
+}
+
+.brand {
+	font-family: 'Sedgwick Ave Display', cursive;
+	letter-spacing: 1px;
+	font-size: 2em;
+	color: #fff;
+}
+
+
+/**** DROPDOWN BUTTON ****/
+
+.dropbtn {
+    background-color: #000;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 14px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #000;
+	text-transform: uppercase;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #000;
+}
+
+
+/**** LINKS ****/
+
+a:link,
+a:visited,
+a:active,
+a:hover {
+    text-decoration: none;
+}
+
+a:hover {
+	color: #93c1c1;
+}
+
+a:active {
+	color: #5f9ea0;
+}
+
+
+/**** HOME PAGE ****/
+
+#banner {
+	background-position: center center;
+	background-size: cover;
+	color: #fff;
+	text-align: center;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+.carousel-caption {
+    top: 35%;
+    bottom: auto;
+    font-size: 4em;
+    line-height: 1.25em;
+    text-shadow: 1px 1px 2px aqua, 0 0 25px black, 0 0 5px aqua;
+}
+
+
+	/**** WRAPPER ****/
+
+	.statement {
+			padding: 0em 0em 4em;
+	}
+
+	.statement .style1 .eccContainer{
+		border-bottom: 1px solid rgba(144, 144, 144, 0.25);
+		border-top: 1px solid rgba(144, 144, 144, 0.25);
+	}
+
+	.statement .style1 .box {
+		background-color: #fff;
+		padding: 3em 2.5em;
+	}
+
+	.statement .style1 .box h2,
+	.statement .style1 .box h3,
+	.statement .style1 .box h4,
+	.statement .style1 .box h5,
+	.statement .style1 .box h6 {
+		color: #858585;
+	}
+
+
+	header p {
+		color: #fff;
+		position: relative;
+		margin: 0 0 1.5em 0;
+	}
+
+	header h2 + p {
+		font-size: 1.25em;
+		margin-top: -1em;
+		line-height: 1.5em;
+	}
+
+	.blurb {
+		text-align: center;
+		margin-bottom: 4em;
+	}
+
+	.blurb h2 {
+		font-size: 40px;
+		margin-bottom: 0.5em;
+		font-weight: 600;
+		margin-top: 100px;
+	}
+
+	.blurb p {
+		font-size: 1.5em;
+	}
+
+	.blurb2 {
+		color: #858585;
+		margin-top: 10px;
+	}
+
+	@media (max-width: 768px) {
+		.carouselParagraph {
+			font-size: 50%;
+			line-height: 30px;
+		}
+	}
+
+
+/**** EXPLORE CONSIDER CHOOSE ****/
+
+.eccContainer {
+	max-width: 90%;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+	display: block;
+	max-width: 100%;
+	margin:0 auto;
+	align-content: center;
+	border-bottom: solid 1px transparent;
+}
+
+.case {
+    clear: none;
+    float: left;
+    display: inline-block;
+    text-align: center;
+}
+
+#tooltip {
+	color: #444;
+	text-decoration: underline;
+}
+
+.tooltips + .tooltip .tooltip-inner {
+	font-size: 25px;
+	padding: 10px;
+	background-color: #444;
+	font-family: "Raleway", Helvetica, sans-serif;
+}
+
+
+
+@media (min-width: 768px){
+	.case {
+	max-width: 90%;
+ }
+}
+
+
+    /*** BOXES ***/
+
+	.box {
+		height: 390px;
+		width: 100%;
+		border-radius: 4px;
+		border: solid 1px rgba(144, 144, 144, 0.25);
+		margin-bottom: 2em;
+		padding: 1.5em;
+		background-color: #f5f5f5;
+	}
+
+	.box :last-child,
+	.box :last-child :last-child,
+	.box :last-child :last-child :last-child {
+		margin-bottom: 30;
+	}
+
+	.box .alt {
+		border: 0;
+		border-radius: 0;
+		padding: 0;
+	}
+
+	.box h3 {
+		margin-bottom: 30px;
+	}
+
+
+    /*** ICONS ***/
+
+	.icon {
+		text-decoration: none;
+		border-bottom: none;
+		position: relative;
+	}
+
+	.icon:before {
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		text-transform: none !important;
+	}
+
+	.icon:active,
+	.icon:hover {
+		text-decoration: none;
+	}
+
+	.icon .label {
+		display: none;
+	}
+
+	.icon.rounded {
+		background-color: #383b43;
+		border-radius: 100%;
+		color: #ffffff;
+		display: inline-block;
+		height: 3.25em;
+		line-height: 3.25em;
+		text-align: center;
+		width: 3.25em;
+	}
+
+	.icon.rounded {
+		font-size: 2.5em;
+		margin-bottom: 0.5em;
+	}
+
+	.icon.rounded.color1 {
+		background-color: #00e6e6;
+	}
+
+	.icon.rounded.color2 {
+		background-color: #cc0000;
+	}
+
+	.icon.rounded.color3 {
+		background-color: #00cc44;
+	}
+
+
+/**** ABOUT PAGE ****/
+
+.aboutContainer {
+	padding-right: -15px;
+    padding-left: -15px;
+    max-width: 98%;
+}
+
+.aboutTitle_Background {
+	align-self: center;
+	max-width: 98%;
+	height: 120px;
+	background-size: cover;
+	margin-bottom: 30px;
+	margin-top: 65px;
+	box-shadow: 3px 3px 5px #888888;
+}
+
+.aboutTab_Codes {
+	font-family: 'Sedgwick Ave Display', cursive;
+	letter-spacing: 1px;
+	font-size: 4em;
+	color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 30px;
+    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}
+
+@media (max-width: 738px) {
+	.aboutTab_Codes {
+		font-size: 3em;
+		padding-top: -20px;
+	}
+}
+
+.myImage {
+	padding-left: 40px;
+}
+
+@media (max-width: 738px) {
+	.pic {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+.myImage .pic {
+	box-shadow: 3px 3px 5px #888888;
+}
+
+.skills {
+	width: 200px;
+	height: 250px;
+	padding-top: 10px;
+	padding-left: 20px;
+	margin-left: 150px;
+	border: solid white 4px;
+	background-color: #f5f5f5;
+	box-shadow: 3px 3px 5px #888888;
+}
+
+@media (max-width: 738px) {
+	.skills {
+		display: block;
+		margin: auto;
+	}
+}
+
+.viewDetails {
+	margin: 0 auto;
+}
+
+
+/**** PROJECTS PAGE ****/
+
+.projectsContainer {
+	background: white;
+	text-align: center;
+	max-width: 82%;
+	margin-top: 10px;
+}
+
+.firstProject_row {
+	margin-left: 30px;
+}
+
+@media (max-width: 1200px) {
+	.firstProject_row {
+		margin-left: 90px;
+	}
+}
+
+@media (max-width: 1050px) {
+	.firstProject_row {
+		margin-left: 120px;
+	}
+}
+
+@media (max-width: 738px) {
+	.firstProject_row {
+		margin-left: 60px;
+	}
+}
+
+.projects {
+	text-align: center;
+	font-family: 'Sedgwick Ave Display', cursive;
+	text-shadow: 1px 1px 2px #000, 0 0 25px #000, 0 0 5px #000;
+	letter-spacing: 2px;
+	color: #fff;
+	font-size: 4em;
+	padding-top: 40px;
+	margin-top: 40px;
+	margin-bottom: 100px;
+}
+
+.imgCoffee {
+
+	margin-right: 30px;
+	margin-bottom: 40px;
+	margin-left: 40px;
+	box-shadow: 3px 3px 5px #888888;
+	height: 200px;
+	width: 200px;
+}
+
+.work-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+  position: relative;
+}
+.info {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+  color:#000;
+  font-family:Futura;
+  text-transform:uppercase;
+  font-weight:600;
+  letter-spacing:0.2em;
+  line-height:1.6;
+  display: none;
+}
+.proj-title {
+	font-weight:100;
+}
+
+
+/**** FAQ SECTION ****/
+
+#faqHeader {
+	font-family: 'Sedgwick Ave Display', cursive;
+}
+
+#FAQCont {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.faqContainer {
+	height: auto;
+	width: 100%;
+	font-size: 1em;
+	box-shadow: 3px 3px 5px #888888;
+	padding-top: 50px;
+	padding-bottom: 40px;
+}
+
+.questionImgs {
+	z-index: -1;
+	box-shadow: 3px 3px 5px #000;
+}
+
+
+.dropdownContainer {
+	height: auto;
+	width: auto;
+}
+
+.dropdownContainer h1 {
+	color: white;
+	text-align: center;
+	font-size: 4em;
+	padding-bottom: 90px;
+	text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}
+
+.ask {
+	text-align: justify;
+	margin-top: 90px;
+	color: #fff;
+	cursor: pointer;
+	max-width: 90%;
+	margin-left: 20px;
+}
+
+.firstQuestions {
+	background-image: url("../img/fence-david-angel-atUnsplash.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	max-width: 100%;
+	margin-bottom: 105px;
+	padding-left: 8em;
+	padding-top: 20px;
+}
+
+@media (max-width: 775px) {
+	.firstQuestions {
+		max-width: 100%;
+		background-repeat: no-repeat;
+		margin: auto auto 200px;
+	}
+}
+
+@media (max-width: 450px) {
+	.firstQuestions {
+		padding-left: 4em;
+	}
+}
+
+.middleBanner {
+	background-image: url("../img/fence2-david-angel-atUnsplash.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	height: 319px;
+	max-width: 100%;
+}
+
+@media (max-width: 675px) {
+	.middleBanner {
+		max-width: 100%;
+		background-repeat: no-repeat;
+		background-size: 850px;
+	}
+}
+
+.secondQuestions {
+	background-image: url("../img/fence-david-angel-atUnsplash.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+	max-width: 100%;
+	margin-top: 100px;
+	margin-bottom: 80px;
+	padding-left: 8em;
+	padding-top: 20px;
+}
+
+.btn.btn-primary {
+	background-color: #93c1c1;
+	border-color: #8c8c8c;
+	color: #333;
+}
+
+@media (max-width: 675px) {
+	.secondQuestions {
+		height: auto;
+		max-width: 100%;
+		background-repeat: no-repeat;
+	}
+}
+
+@media (max-width: 450px) {
+	.secondQuestions {
+		padding-left: 4em;
+	}
+}
+
+
+	/**** MODAL ****/
+
+
+	#modalEmbed1, #modalEmbed2  {
+    	height: 500px;
+    	width: 100%;
+    	padding: 10px;
+	}
+
+	.modalButton {
+		display:block;
+		padding-top: 15px;
+  		padding-left: 30px;
+	}
+
+	@media (max-width: 630px) {
+		.modalButton {
+			margin-left: -40px;
+		}
+	}
+
+	.modal-content {
+		padding: auto;
+	}
+
+	.modal_header h3 {
+		padding-left: 20px;
+	}
+
+	.learnMore_row {
+		padding-top: 60px;
+		max-width: 27%;
+		margin-top: 40px;
+	}
+
+	.learnMore {
+		padding-top: 12px;
+		padding-right: 10px;
+		text-align: left;
+  		float: left;
+  		color: #fff;
+  		text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+	}
+
+
+	/**** FAQ DROPDOWNS ****/
+
+	.whoDropdown,
+	.whenDropdown,
+	.whereDropdown,
+	.howDropdown,
+	.whyDropdown,
+	.whatDropdown {
+    	color: #fff;
+    	text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+	}
+
+	.dropdown p {
+		padding-top: 5px;
+		padding-right: 5px;
+		padding-bottom: 0;
+		padding-left: 5px;
+	}
+
+	.whoDropdown .dropdown-content,
+	.whenDropdown .dropdown-content,
+	.whereDropdown .dropdown-content,
+	.howDropdown .dropdown-content,
+	.whyDropdown .dropdown-content,
+	.whatDropdown .dropdown-content {
+		margin-left: 20px;
+		margin-top: 10px;
+		text-align: center;
+	}
+
+
+/**** CONTACT PAGE ****/
+
+#Contact {
+	background-image: url("../img/contactDesk1-freddy-castro-atUnsplash.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	color: white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 100px;
+}
+
+.contactContainer {
+	max-width: 80%;
+}
+
+.contactHeader {
+	color: #fff;
+	text-align: center;
+	font-size: 5em;
+	letter-spacing: 5px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	text-shadow: 1px 1px 2px aqua, 0 0 25px black, 0 0 5px aqua !important;
+}
+
+@media (max-width: 478px) {
+	.contactHeader {
+		font-size: 4em;
+	}
+}
+
+.form {
+	max-width: 70%;
+	margin: 0 auto;
+}
+
+.addressRow {
+	margin-top: 40px;
+}
+
+.contactRow {
+	max-width: 80%;
+	margin-top: 60px;
+}
+
+#map {
+	height: 250px;
+	width:100%;
+}
+
+#infoWindowContent {
+	color: #000;
+	text-align: left;
+}
+
+#bodyContent a {
+	color: #000;
+	text-decoration: underline;
+}
+
+.location {
+	padding-top: 45px;
+}
+
+.myInfo {
+	text-align: center;
+	letter-spacing: 2px;
+	margin: 20px 0;
+}
+
+@media (max-width: 478px) {
+	.myInfo {
+		font-size: 10pt;
+	}
+}
+
+.address {
+	text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}
+
+.namePhone_row {
+	width: 50%;
+}
+
+#char-count {
+
+}
+
+.buttonSubmit {
+	margin: 0 auto;
+	max-width: 72px;
+}
+
+.btn {
+	display: inline-block;
+	font-weight: 600;
+}
+
+.btn-default {
+	background-color: #93c1c1;
+}
+
+.button {
+	margin-top: 40px;
+}
+
+#char-count {
+	font-size: 30px;
+	text-align: center;
+	color:#93c1c1;
+	padding-bottom: 10px;
+	text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}
+
+#visible-comment {
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+	letter-spacing: 2px;
+	font-weight: 600;
+}
+
+.label {
+	letter-spacing: 2px;
+	text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}
+
+.namePhone_Input {
+	max-width: 100%;
+}
+
+@media (max-width: 1000px) {
+	.namePhone_row {
+		min-width: 100%;
+	}
+}
+
+.emailInput {
+	max-width: 100%;
+}
+
+.message-box {
+	max-width: 100%;
+}
+
+.textarea {
+	width: 100%;
+}
+
+
+/**** FOOTER ****/
+
+.glyphicon-envelope {
+	font-size: 50px;
+	word-spacing: -.75em;
+}
+
+.glyphicon-map-marker {
+	font-size: 50px;
+	word-spacing: -.75em;
+}
+
+.glyphicon-earphone {
+	font-size: 50px;
+	word-spacing: -.75em;
+}
+
+.otherMethods {
+	color: #fff;
+	text-align: center;
+	margin-top: 25px;
+	text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}
+
+.twitter, .instagram {
+	margin-right: 20px;
+}
+
+.copyright {
+	margin-top: 70px;
+	margin-bottom: 50px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+iframe {
+	display: block;
+	margin: 0 auto;
+}
+
+.video {
+	max-width: 100%;
+}
