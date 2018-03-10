@@ -1,11 +1,3 @@
-//Facebook       
-(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-        
 //Twitter
 !function(d,s,id){
 	var js,fjs=d.getElementsByTagName(s)[0],
@@ -94,7 +86,7 @@ $(document).ready(function() {
 	//Work Section
 	for(var i = 0; i < works.length; ++i) {
 		$("#works").append("\
-			<div class='col-md-3 col-sm-6 col-xs-12 imgCoffee'>\
+			<div class='col-md-3 col-sm-6 col-xs-12 projectImages'>\
 				<a href='" + works[i].url + "' target='_blank' class='work-img'>\
 					<img class='img-responsive' src='" + works[i].pic + "'>\
 					<span class='info'>" + works[i].title + "</span>\
@@ -102,7 +94,7 @@ $(document).ready(function() {
 			</div>\
 		");
 
-		var images = $('#works .imgCoffee');
+		var images = $('#works .projectImages');
 			if (i%2 === 0) {
 				$(images[i]).css("border", "2px solid #93c1c1");
 			} else {
@@ -111,7 +103,6 @@ $(document).ready(function() {
 
     //Hovering effect project titles
     $(".work-img").mouseenter( function() {
-    	console.log(this);
     	$(".info", this).show();
     }).mouseleave(function(){
     	$(".info", this).hide();
@@ -122,14 +113,7 @@ $(document).ready(function() {
 
 })//End of Doc Ready
 
-//Map from Google
-//var map;
-//function initMap() {
-  //map = new google.maps.Map(document.getElementById('map'), {
-    //center: {lat: 42.0549, lng: -82.6062},
-    //zoom: 12
-  //});
-//}
+
 
 //Map with Marker
 var marker;
@@ -149,7 +133,7 @@ function initMap() {
 		});
 
 		marker.addListener('click', toggleBounce);
-		
+
 function toggleBounce() {
   if (marker.getAnimation() !== null) {
     marker.setAnimation(null);
@@ -195,25 +179,3 @@ function toggleBounce() {
 
 
       }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

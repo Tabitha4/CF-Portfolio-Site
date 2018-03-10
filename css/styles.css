@@ -47,6 +47,11 @@ a {
 	letter-spacing: 0.05em;
 }
 
+.navbar-nav li .project-list {
+	color: #777;
+}
+
+
 .navbar-default .navbar-nav .active a,
 .navbar-default .navbar-nav .active a:focus,
 .navbar-default .navbar-nav .active a:hover {
@@ -169,10 +174,6 @@ a:active {
 
 	/**** WRAPPER ****/
 
-	.statement {
-			padding: 0em 0em 4em;
-	}
-
 	.statement .style1 .eccContainer{
 		border-bottom: 1px solid rgba(144, 144, 144, 0.25);
 		border-top: 1px solid rgba(144, 144, 144, 0.25);
@@ -286,7 +287,7 @@ a:active {
 		border: solid 1px rgba(144, 144, 144, 0.25);
 		margin-bottom: 2em;
 		padding: 1.5em;
-		background-color: #f5f5f5;
+		background-color: #e3e3e3;
 	}
 
 	.box :last-child,
@@ -303,6 +304,7 @@ a:active {
 
 	.box h3 {
 		margin-bottom: 30px;
+		color: #E76824;
 	}
 
 
@@ -349,15 +351,15 @@ a:active {
 	}
 
 	.icon.rounded.color1 {
-		background-color: #00e6e6;
+		background-color: #a3d9d9;
 	}
 
 	.icon.rounded.color2 {
-		background-color: #cc0000;
+		background-color: #93c1c1;
 	}
 
 	.icon.rounded.color3 {
-		background-color: #00cc44;
+		background-color: #789c9c;
 	}
 
 
@@ -365,8 +367,8 @@ a:active {
 
 .aboutContainer {
 	padding-right: -15px;
-    padding-left: -15px;
-    max-width: 98%;
+  padding-left: -15px;
+  max-width: 98%;
 }
 
 .aboutTitle_Background {
@@ -376,7 +378,7 @@ a:active {
 	background-size: cover;
 	margin-bottom: 30px;
 	margin-top: 65px;
-	box-shadow: 3px 3px 5px #888888;
+	box-shadow: 3px 3px 5px 3px #888888;
 }
 
 .aboutTab_Codes {
@@ -384,10 +386,10 @@ a:active {
 	letter-spacing: 1px;
 	font-size: 4em;
 	color: white;
-    text-align: center;
-    margin-top: 20px;
-    padding-top: 30px;
-    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 30px;
+  text-shadow: 1px 1px 2px black, 1px 0 25px black, 1px 0 5px black;
 }
 
 @media (max-width: 738px) {
@@ -401,39 +403,72 @@ a:active {
 	padding-left: 40px;
 }
 
-@media (max-width: 738px) {
+@media (max-width: 1000px) {
 	.pic {
+		vertical-align: middle;
 		display: block;
 		margin: 0 auto;
 	}
 }
 
 .myImage .pic {
+	margin-top: 80px;
 	box-shadow: 3px 3px 5px #888888;
-}
-
-.skills {
-	width: 200px;
-	height: 250px;
-	padding-top: 10px;
-	padding-left: 20px;
-	margin-left: 150px;
-	border: solid white 4px;
-	background-color: #f5f5f5;
-	box-shadow: 3px 3px 5px #888888;
-}
-
-@media (max-width: 738px) {
-	.skills {
-		display: block;
-		margin: auto;
-	}
 }
 
 .viewDetails {
 	margin: 0 auto;
 }
 
+/**** MODAL ****/
+
+
+#modalEmbed1, #modalEmbed2  {
+		height: 500px;
+		width: 100%;
+		padding: 10px;
+}
+
+.modalButton {
+	display:block;
+	padding-top: 15px;
+		padding-left: 30px;
+}
+
+@media (max-width: 630px) {
+	.modalButton {
+		margin-left: -40px;
+	}
+}
+
+.modal-content {
+	padding: auto;
+}
+
+.modal_header h3 {
+	padding-left: 20px;
+}
+
+.learnMore_row {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	max-width: 27%;
+}
+
+.learnMore {
+	padding-top: 12px;
+	padding-right: 10px;
+	text-align: left;
+	float: left;
+	color: #fff;
+	text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}
+
+.btn.btn-primary {
+	background-color: #93c1c1;
+	border-color: #8c8c8c;
+	color: #333;
+}
 
 /**** PROJECTS PAGE ****/
 
@@ -444,26 +479,18 @@ a:active {
 	margin-top: 10px;
 }
 
-.firstProject_row {
-	margin-left: 30px;
-}
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
 	.firstProject_row {
-		margin-left: 90px;
+		vertical-align: middle;
 	}
 }
 
-@media (max-width: 1050px) {
-	.firstProject_row {
-		margin-left: 120px;
-	}
-}
-
-@media (max-width: 738px) {
-	.firstProject_row {
-		margin-left: 60px;
-	}
+.description {
+	margin:0 auto;
+	text-align: center;
+	max-width: 60%;
+	padding-bottom: 30px;
 }
 
 .projects {
@@ -475,14 +502,13 @@ a:active {
 	font-size: 4em;
 	padding-top: 40px;
 	margin-top: 40px;
-	margin-bottom: 100px;
 }
 
-.imgCoffee {
-
+.projectImages {
 	margin-right: 30px;
 	margin-bottom: 40px;
 	margin-left: 40px;
+	padding-top: 15px;
 	box-shadow: 3px 3px 5px #888888;
 	height: 200px;
 	width: 200px;
@@ -499,11 +525,11 @@ a:active {
   top: 55%;
   left: 5%;
   color:#000;
-  font-family:Futura;
-  text-transform:uppercase;
-  font-weight:600;
-  letter-spacing:0.2em;
-  line-height:1.6;
+  font-family: Futura;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  line-height: 1.6;
   display: none;
 }
 .proj-title {
@@ -546,7 +572,7 @@ a:active {
 	color: white;
 	text-align: center;
 	font-size: 4em;
-	padding-bottom: 90px;
+	padding-bottom: 40px;
 	text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
 }
 
@@ -616,11 +642,6 @@ a:active {
 	padding-top: 20px;
 }
 
-.btn.btn-primary {
-	background-color: #93c1c1;
-	border-color: #8c8c8c;
-	color: #333;
-}
 
 @media (max-width: 675px) {
 	.secondQuestions {
@@ -635,51 +656,6 @@ a:active {
 		padding-left: 4em;
 	}
 }
-
-
-	/**** MODAL ****/
-
-
-	#modalEmbed1, #modalEmbed2  {
-    	height: 500px;
-    	width: 100%;
-    	padding: 10px;
-	}
-
-	.modalButton {
-		display:block;
-		padding-top: 15px;
-  		padding-left: 30px;
-	}
-
-	@media (max-width: 630px) {
-		.modalButton {
-			margin-left: -40px;
-		}
-	}
-
-	.modal-content {
-		padding: auto;
-	}
-
-	.modal_header h3 {
-		padding-left: 20px;
-	}
-
-	.learnMore_row {
-		padding-top: 60px;
-		max-width: 27%;
-		margin-top: 40px;
-	}
-
-	.learnMore {
-		padding-top: 12px;
-		padding-right: 10px;
-		text-align: left;
-  		float: left;
-  		color: #fff;
-  		text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
-	}
 
 
 	/**** FAQ DROPDOWNS ****/
@@ -724,7 +700,7 @@ a:active {
     padding-bottom: 80px;
     height: auto;
     margin-top: 15px;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
 
 .contactContainer {
@@ -800,9 +776,6 @@ a:active {
 	width: 50%;
 }
 
-#char-count {
-
-}
 
 .buttonSubmit {
 	margin: 0 auto;
@@ -884,20 +857,26 @@ a:active {
 	word-spacing: -.75em;
 }
 
-.otherMethods {
+.song-words {
+	padding-bottom: 20px;
+}
+
+.otherMethods, .song-words {
 	color: #fff;
 	text-align: center;
 	margin-top: 25px;
 	text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
 }
 
+
 .twitter, .instagram {
 	margin-right: 20px;
 }
 
 .copyright {
-	margin-top: 70px;
+	font-size: 15px;
 	margin-bottom: 50px;
+	color: #E76824;
 }
 
 .video-container {

@@ -33,11 +33,13 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a class="listItem active" href="#Home">Home</a></li>
                         <li><a class="listItem" href="#About">About</a></li>
-                        <li class="dropdown"><button class="dropbtn"><a class="listItem" href="#Projects">Projects <i class="fa fa-caret-down"></i></button></a>
+                        <li class="dropdown"><button class="dropbtn"><a class="listItem project-list" href="#Projects">Projects <i class="fa fa-caret-down"></i></button></a>
                             <div class="dropdown-content">
-                                <a href="/CropScoutSite/scout.html" target="_blank">Project #1</a>
-                                <a href="/My Gallery/gallery.html" target="_blank">Project #2</a>
-                                <a href="/Calculator/calculator.html" target="_blank">Project #3</a>
+                                <a href="/CropScoutSite/scout.html" target="_blank">Crop Scout Site</a>
+                                <a href="/My Gallery/gallery.html" target="_blank">Personal Gallery</a>
+                                <a href="/Calculator/calculator.html" target="_blank">Javascript Calculator</a>
+                                <a href="https://shiny-objects-source.herokuapp.com/" target="_blank">Shiny Site!</a>
+                                <a href="/Madlibs/index.html" target="_blank">Java Madlib</a>
                             </div>
                         </li>
                         <li><a class="listItem" href="#Faq">Faq</a></li>
@@ -111,21 +113,21 @@
                     <div class="col-med-4 col-sm-4 col-xs-12 case">
                         <section class="box boxOne">
                             <i class="icon big rounded color1 fa-binoculars"></i>
-                            <a class="tooltips" href="#" data-toggle="tooltip1" data-placement="top" title="Wander through, inspect, survey, investigate" id="tooltip"><h3>Explore</h3></a>
+                            <a class="tooltips" href="#" data-toggle="tooltip1" data-placement="top" title="Wander through, inspect, survey, investigate" id="tooltip"><h3 class="options">Explore</h3></a>
                             <p>Click away! Check out my stuff and see what you think</p>
                         </section>
                     </div>
                     <div class="col-med-4 col-sm-4 col-xs-12 case">
                         <section class="box boxTwo">
                             <i class="icon big rounded color2 fa-question-circle"></i>
-                            <a class="tooltips" href="#" data-toggle="tooltip1" data-placement="top" title="Put thought into, review, ponder, contemplate" id="tooltip"><h3>Consider</h3></a>
+                            <a class="tooltips" href="#" data-toggle="tooltip1" data-placement="top" title="Put thought into, review, ponder, contemplate" id="tooltip"><h3 class="options">Consider</h3></a>
                             <p>A fresh resh perspective from a newly addicted Web Developer.</p>
                         </section>
                     </div>
                     <div class="col-med-4 col-sm-4 col-xs-12 case">
                         <section class="box boxThree">
                             <i class="icon big rounded color3 fa-thumbs-up"></i>
-                            <a class="tooltips" href="#" data-toggle="tooltip1" data-placement="top" title="Select course of action, decide on, nominate" id="tooltip"><h3>Choose</h3></a>
+                            <a class="tooltips" href="#" data-toggle="tooltip1" data-placement="top" title="Select course of action, decide on, nominate" id="tooltip"><h3 class="options">Choose</h3></a>
                             <p>C'mon, take a leap. I'm the best, just ask my Mom!</p>
                         </section>
                     </div>
@@ -145,116 +147,19 @@
                     </div><!-- END ABOUT HEADER -->
                 </div><!-- END ABOUT BACKGROUND-->
 
-                <div class="row text-centered">
-                    <div class="myImage col-md-4 col-xs-12">
-                        <img src="img/Movember.jpg" class= "img-responsive img-thumbnail gap-right pic" width="200" height="300" alt="About Tabitha">
+                <div class="row text-centered about-tabitha">
+                    <div class="myImage col-md-6 col-xs-12">
+                        <img src="img/MovemberMe1.jpg" class= "img-responsive img-thumbnail gap-right pic" width="400" height="600" alt="About Tabitha">
                     </div><!-- END IMAGE -->
 
                     <div class="intro col-md-4 col-xs-12">
-                        <h3 class="introducing">Introducing...</h3>
-                        <p>Hi! I'm the "Tab" in "Tab.Codes". I'm a highly creative Web Developer looking for an entry level position with a company that is seeking an indivual that is dependable, organized yet playful with design.</p>
-                        <h3>My Story</h3>
-                        <p>It's a simple story really. I'm a girl that wants to make her mark in this world. Who doesn't?</p>
-                        <p>I try to challenge myself constantly to learn and apply the learning daily.</p>
-                        <p>When I'm not exercising my brain, I like to push my limits physically to take care of me. I'm a big believer of "If you haven't got your health, you haven't got anything."</p>
+                        <h3 class="introducing">A Wee Bit About Me</h3>
+                        <p>Hi! I'm the "Tab" in "Tab Codes". I'm a highly creative Web Developer looking for an entry level position with a company that is seeking an indivual that is dependable, organized yet playful with design.</p>
+                        <p>I've always been a creative soul but originally career paths that stifled that. Although it is very rewarding in helping others, the opportunities for me to express my creativeness was limited. Enter Web Development.</p>
+                        <p>I started dabbling with coding and challenging myself to develop sites that functioned as well as looked cohesive. Spending a year just kind of tinkering online following lessons, listening to podcasts and clicking like a mad woman to absorb as much as I could!</p>
+                        <p>Often I am told that it's not the Web Developers task to design the site. I disagree. Ya, I know that UI/UX knowledge is important and specific. I am very interested in continuing my learning in that area. My goal is to become a Full Front End Web Developer well versed in languages and design.  </p>
                     </div><!-- END INTRO AND STORY-->
-
-                    <div class="skills col-md-4 col-xs-12" style="background: #f2e6ff;">
-                        <h3>My Skills</h3>
-                        <ul id="skillList">
-                            <li>HTML\CSS</li>
-                            <li>Javascript</li>
-                            <li>Ruby</li>
-                            <li>Responsive Design</li>
-                        </ul>
-                    </div><!-- END SKILLS -->
                 </div><!-- END OF DIV ROW -->
-            </div><!-- END OF ABOUT CONTAINER -->
-        </section><!--END ABOUT TABZ SECTION -->
-
-
-        <!-- ============================= -->
-        <!-- ====== PROJECTS SECTION ====== -->
-        <!-- ============================= -->
-
-
-        <section id="Projects">
-                <h1 class="projects">Things I've worked on:</h1>
-                <div class="container-fluid projectsContainer">
-                    <div class="row firstProject_row" id="works">
-                    </div><!-- 2nd ROW -->
-                </div><!-- END PROJECTS CONTAINER -->
-        </section><!-- END PROJECTS SECTION -->
-
-        <!-- ============================= -->
-        <!-- ======== FAQ SECTION ======== -->
-        <!-- ============================= -->
-
-        <section id="Faq">
-            <div id="FAQCont" class="container faqContainer">
-                <div class="container-fluid dropdownContainer">
-                    <h1 id="faqHeader">There are no stupid FAQ's</h1>
-                    <div  id="Questions1" class="row firstQuestions">
-                        <div class="col-xs-12 col-sm-4 col-md-4 questions">
-                            <img src="img/who.jpg" class="whoPhoto img-responsive questionImgs" alt="Polaroid with Who? written on it">
-                            <div class="dropdown whoDropdown">
-                                <span class="ask"><a>Who are you?</a></span>
-                                <div class="dropdown-content">
-                                    <p>So glad you asked. I'm a girl on a mission to create.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-md-4 questions">
-                            <img src="img/when.jpg" class="whenPhoto img-responsive questionImgs" alt="Polaroid with When? written on it">
-                            <div class="dropdown whenDropdown">
-                                <span class="ask"><a>When do you work?</a></span>
-                                <div class="dropdown-content">
-                                    <p>As a remote worker, my hours are determined by how long it takes to get it done.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-md-4 questions">
-                            <img src="img/where.jpg" class="wherePhoto img-responsive questionImgs" alt="Polaroid with Where? written on it">
-                            <div class="dropdown whereDropdown">
-                                <span class="ask"><a>Where are you?</a></span>
-                                <div class="dropdown-content">
-                                    <p>I am Canadian! In the remote world, I am anywhere the work needs me.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- END FIRST ROW QUESTIONS -->
-                    <div id="tabCodes_banner" class="middleBanner">
-                    </div><!-- END OF BANNER -->
-                    <div  id="Questions2" class="row secondQuestions">
-                        <div class="col-xs-12 col-sm-4 col-md-4 questions howq">
-                            <img src="img/how.jpg" class="howPhoto img-responsive questionImgs" alt="Polaroid with How? written on it">
-                            <div class="dropdown howDropdown">
-                                <span class="ask"><a>How long does it take?</a></span>
-                                <div class="dropdown-content">
-                                    <p>That all depends on the content and our collective ideas on how it should look.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-md-4 questions">
-                            <img src="img/why.jpg" class="whyPhoto img-responsive questionImgs" alt="Polaroid with Why? written on it">
-                            <div class="dropdown whyDropdown">
-                                <span class="ask"><a>Why be a Developer?</a></span>
-                                <div class="dropdown-content">
-                                    <p>For the challenge of getting a website to look I want it to. Even when I feel like ripping out my hair.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-md-4 questions">
-                            <img src="img/what.jpg" class="whatPhoto img-responsive questionImgs" alt="Polaroid with What? written on it">
-                            <div class="dropdown whatDropdown">
-                                <span class="ask"><a>What can I expect?</a></span>
-                                <div class="dropdown-content">
-                                    <p>A fresh enthusiasm and determination to reach goals set.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- END SECOND ROW QUESTIONS -->
-                </div><!--  END OF DROPDOWN CONTAINER -->
                 <div class="row learnMore_row">
                         <h2 class=" modal-title learnMore"><strong>Learn More!</strong></h2>
                         <div class="modalButton">
@@ -270,7 +175,7 @@
                                 </div><!--  END MODAL HEADER -->
                                 <div class="modal-body">
                                     <button type="button" class="btn btn-default closeButton" data-dismiss="modal">Close</button>
-                                    <embed id="modalEmbed1" src="Tab Codes CV & Resume.pdf">
+                                    <embed id="modalEmbed1" src="Tabitha Levine CV & Resume Web.pdf">
                                 </div><!-- END OF MODAL BODY -->
                                 <div class="modal-footer">
                                 </div><!-- END MODAL FOOTER -->
@@ -278,6 +183,96 @@
                         </div><!-- END LG MODAL DIALOG -->
                     </div><!--  END LG MODAL -->
                 </div><!--  END LEARN MORE ROW -->
+            </div><!-- END OF ABOUT CONTAINER -->
+        </section><!--END ABOUT TABZ SECTION -->
+
+
+        <!-- ============================= -->
+        <!-- ====== PROJECTS SECTION ====== -->
+        <!-- ============================= -->
+
+
+        <section id="Projects">
+                <h1 class="projects">Things I've worked on:</h1>
+                <div class="description">
+                  <h3>The following are projects I've worked on to fine tune my skills as a Developer.</h3>
+                    <p>A whimsical site about the tasks of a Crop Scout. A site to display my camera eye. Who doesn't like to show their pics? A calculator that has a little of my design <i>love</i> and it works! An ecommerce site for those of us that like a little bling in life and finally, a Java (pun intended) Javascript Madlib. I am always workng on something so come back and see what's up! I hope you find that you discover my particular style and personality is throughout.</p>
+                </div>
+                <div class="container-fluid projectsContainer">
+                    <div class="row firstProject_row" id="works">
+                    </div><!-- END ROW -->
+                </div><!-- END PROJECTS CONTAINER -->
+        </section><!-- END PROJECTS SECTION -->
+
+        <!-- ============================= -->
+        <!-- ======== FAQ SECTION ======== -->
+        <!-- ============================= -->
+
+        <section id="Faq">
+            <div id="FAQCont" class="container faqContainer">
+                <div class="container-fluid dropdownContainer">
+                    <h1 id="faqHeader">There are no stupid FAQ's</h1>
+                    <div  id="Questions1" class="row firstQuestions">
+                        <div class="col-xs-12 col-sm-4 col-md-4 questions">
+                            <div class="dropdown whoDropdown">
+                              <a class="ask"><img src="img/who.jpg" class="whoPhoto img-responsive questionImgs" alt="Polaroid with Who? written on it"></a>
+                              <span class="ask"><a>Who are you?</a></span>
+                                <div class="dropdown-content">
+                                  <p>So glad you asked. I'm a girl on a mission to create.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 questions">
+                          <div class="dropdown whenDropdown">
+                            <a class="ask"><img src="img/when.jpg" class="whenPhoto img-responsive questionImgs" alt="Polaroid with When? written on it"></a>
+                              <span class="ask"><a>When do you work?</a></span>
+                                <div class="dropdown-content">
+                                  <p>As a remote worker, my hours are determined by how long it takes to get it done.</p>
+                                </div>
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 questions">
+                          <div class="dropdown whereDropdown">
+                            <a class="ask"><img src="img/where.jpg" class="wherePhoto img-responsive questionImgs" alt="Polaroid with Where? written on it"></a>
+                                <span class="ask"><a>Where are you?</a></span>
+                                  <div class="dropdown-content">
+                                    <p>I am Canadian! In the remote world, I am anywhere the work needs me.</p>
+                                  </div>
+                            </div>
+                        </div>
+                    </div><!-- END FIRST ROW QUESTIONS -->
+                    <div id="tabCodes_banner" class="middleBanner">
+                    </div><!-- END OF BANNER -->
+                    <div  id="Questions2" class="row secondQuestions">
+                        <div class="col-xs-12 col-sm-4 col-md-4 questions howq">
+                          <div class="dropdown howDropdown">
+                            <a class="ask"><img src="img/how.jpg" class="howPhoto img-responsive questionImgs" alt="Polaroid with How? written on it"></a>
+                                <span class="ask"><a>How long does it take?</a></span>
+                                  <div class="dropdown-content">
+                                    <p>Depends on the content and our joint ideas on the outcome.</p>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 questions">
+                          <div class="dropdown whyDropdown">
+                            <a class="ask"><img src="img/why.jpg" class="whyPhoto img-responsive questionImgs" alt="Polaroid with Why? written on it"></a>
+                                <span class="ask"><a>Why be a Developer?</a></span>
+                                  <div class="dropdown-content">
+                                    <p>For the challenge of it. Even when I feel like ripping out my hair.</p>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 questions">
+                          <div class="dropdown whatDropdown">
+                            <a class="ask"><img src="img/what.jpg" class="whatPhoto img-responsive questionImgs" alt="Polaroid with What? written on it"></a>
+                                <span class="ask"><a>What can I expect?</a></span>
+                                  <div class="dropdown-content">
+                                    <p>A fresh enthusiasm and determination to reach goals set.</p>
+                                  </div>
+                            </div>
+                        </div>
+                    </div><!-- END SECOND ROW QUESTIONS -->
+                </div><!--  END OF DROPDOWN CONTAINER -->
             </div><!-- END FAQ CONTAINER -->
         </section><!-- END FAQ SECTION -->
 
@@ -325,15 +320,13 @@
                 <div class="myInfo">
                     <div class="addressRow row">
                         <div class="col-sm-6 col-xs-12 map">
-                            <!-- <iframe width="100%" height="200" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJkZGhJyLrOogR_NMAuXURTYg&key=AIzaSyBYnpIh0VNapb9iam1iBvlGrJRdlDgniSE" allowfullscreen></iframe> -->
                             <div id="map">
-
                             </div>
                         </div>
                         <div class="col-sm-6 col-xs-12 location">
-                            <p class="address">Phone: +555-555-5555</p>
-                            <p class="address">Email: tab.codes@gmail.com</p>
-                            <p class="address">Address: 123 About Here St.,<br> Leamington, Ontario,<br>Canada | C0D 3S1</p>
+                            <p class="address">Phone: +519-566-7417</p>
+                            <p class="address">Email: tabitha@tabcodes.ca</p>
+                            <p class="address"> Leamington, Ontario, Canada</p>
                         </div>
                     </div><!-- END ADDRESS ROW -->
                 </div><!-- END MY INFO DIV -->
@@ -346,6 +339,7 @@
 
         <footer id="footerArea">
             <div class="container-fluid">
+              <p class="song-words">This is a song that I've always hummed when I work. The lyrics are not indicative of my abilities, in case you're worried. This young man sings it fabulously. Enjoy!</p>
                 <div class="youtubeWrapper">
                     <div class="videoContainer">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/YgRGXxtsJo0" frameborder="0" allowfullscreen class="video"></iframe>
@@ -363,6 +357,9 @@
                         </div>
                     </div>
                 </div><!-- END OF OTHER METHODS DIV -->
+                <div class="logo">
+                  <img src="img/TabCodesBlueGrey.png" style="display: block; margin: 0 auto;" width="250" height="250">
+                </div>
                 <div class="row copyrightRow">
                     <div class="col-sm-12 text-center">
                         <p class="copyright">Copyright © 2017 Tab Codes</p>
