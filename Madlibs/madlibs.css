@@ -1,0 +1,19 @@
+.java {
+  color: #614035;
+}
+
+.main-title {
+  color: #46B8B8;
+  font-size: 4em;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#submit-button {
+  margin-top: 20px;
+  background-color: #46B8B8;
+}
+
+#madlibContainer {
+  font-size: 2em;
+}
