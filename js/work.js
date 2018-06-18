@@ -27,9 +27,9 @@ var works = [
     url: "http://5a8afbf97b6ee82b44b6b9de.coordinator-seams-12282.bitballoon.com/Madlibs/index"
   },
   {
-    title: "Project 6 Coming Soon",
-    pic: "img/plainCoffee1-isaac-benhesed-atUnsplash.jpg",
-    url: "#"
+    title: "",
+    pic: "img/MLS.jpg",
+    url: "http://coordinator-seams-12282.bitballoon.com/Bootstrap4Site/index"
   },
   {
     title: "Project 7 Coming Soon",
