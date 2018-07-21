@@ -1,4 +1,27 @@
-/*** Header ***/
+
+.navbar {
+  background-color: #17a2b8;
+}
+
+button.navbar-toggler {
+  color: #fff;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+a:hover {
+  color: #e83e8c;
+}
+
+.jumbotron {
+  background-repeat: no-repeat;
+  background-image: url("../images/silver-sugar.jpg");
+  background-size: cover;
+  height: 700px;
+  margin-top: 65px;
+  }
 
 .ml-sugar {
   letter-spacing: 8px;
@@ -10,3 +33,72 @@
   letter-spacing: 4px;
   font-size: 5vw;
 }
+
+.melt-like {
+  text-align: center;
+  font-size: 6.5vw;
+  color: #fff;
+}
+
+.main-section {
+  padding-bottom: 180px;
+}
+
+.sugar-sugar {
+  text-align: center;
+  font-size: 3vw;
+  color: #fff;
+}
+
+.sugar-messege,
+.sweet-stuff-header,
+.contact-header {
+  color: #17a2b8;
+}
+
+.faces-choc p {
+  padding-top: 40px;
+}
+
+.sweet-stuff-header {
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+.form-control {
+  padding-bottom: 0px;
+}
+
+.col-form-label {
+  padding-top: 40px;
+}
+
+.submit-btn {
+  padding-top: 15px;
+}
+
+.form-control {
+  border: 1px solid #e83e8c;
+}
+
+h2 {
+  font-size: 4vw;
+}
+
+#about {
+  padding-top: 160px;
+}
+
+#sweet-stuff {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#contact {
+  padding-top: 100px;
+}
+
+#footer {
+  margin-top: 2rem;
+  background-color: #17a2b8;
+  }
