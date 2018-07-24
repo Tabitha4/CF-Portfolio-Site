@@ -1,4 +1,4 @@
-
+/*** Navbar ***/
 .navbar {
   background-color: #17a2b8;
 }
@@ -15,6 +15,7 @@ a:hover {
   color: #e83e8c;
 }
 
+/*** Landing Page ***/
 .jumbotron {
   background-repeat: no-repeat;
   background-image: url("../images/silver-sugar.jpg");
@@ -40,10 +41,7 @@ a:hover {
   color: #fff;
 }
 
-.main-section {
-  padding-bottom: 180px;
-}
-
+/*** Main Page ***/
 .sugar-sugar {
   text-align: center;
   font-size: 3vw;
@@ -57,14 +55,15 @@ a:hover {
 }
 
 .faces-choc p {
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
+/*** Sweet Stuff Page ***/
 .sweet-stuff-header {
-  padding-top: 100px;
   padding-bottom: 20px;
 }
 
+/*** Contact Page ***/
 .form-control {
   padding-bottom: 0px;
 }
@@ -81,24 +80,26 @@ a:hover {
   border: 1px solid #e83e8c;
 }
 
+/*** Site Wide and ID's ***/
 h2 {
   font-size: 4vw;
 }
 
 #about {
-  padding-top: 160px;
+  padding-top: 100px;
+  padding-bottom: 40px;
 }
 
 #sweet-stuff {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
 #contact {
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
 #footer {
-  margin-top: 2rem;
   background-color: #17a2b8;
+  height: 56px;
   }
