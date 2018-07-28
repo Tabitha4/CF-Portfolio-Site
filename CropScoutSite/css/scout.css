@@ -28,18 +28,22 @@ p{
   margin: 0;
 }
 
-a:hover { text-decoration: none; }
+a:hover {
+  text-decoration: none;
+}
+
 
 /* Start Main Menu */
-header {
+.intro-section {
   background-image: url("../img/GreenhouseSky.JPG");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover; 
-  padding: 235px 0;
+  background-size: cover;
+  padding-top: 200px;
   margin-bottom: 20px;
   background-attachment: fixed;
   background-size: 100%;
+  height: 800px;
 }
 
 ul#menu {
@@ -55,12 +59,11 @@ ul#menu {
   margin-top: -234px;
 }
 
-.main-menu ul{}
-
 .main-menu ul li {
   display: inline-block;
   padding: 10px;
 }
+
 .main-menu ul li a {
   background: #383E4C none no-repeat scroll 0 0;
   border: 1px solid #646d7c;
@@ -70,6 +73,7 @@ ul#menu {
   text-decoration: none;
   text-transform: capitalize;
 }
+
 
 /*.main-menu ul li.active a,*/
 .main-menu ul li a:focus,
@@ -91,9 +95,9 @@ ul#menu {
   text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
 }
 .single-page-nav { text-align: center; }
-/* End Header CSS */
 
-/* Start Feature CSS */
+
+/* Start Feature */
 .feature-content {
     background: #F2F2F2;
     padding-bottom: 40px;
@@ -101,7 +105,7 @@ ul#menu {
 }
 .feature-content-title {
     padding: 0 20px;
-    text-align: left;    
+    text-align: left;
 }
 .feature-content-description {
     padding: 0 20px 35px;
@@ -125,15 +129,27 @@ ul#menu {
 }
 
 
-/* Start Mission CSS */
+/* Start Mission */
 #mission-area {
-    margin: 60px 5px;
+    margin: 0px 5px;
 }
+
+.mission-section {
+  height: 100%;
+  padding-top: 15px;
+}
+
 .mission-content {
   background: #F2F2F2;
   padding-bottom:25px;
   max-width: 555px;
   margin: 0 auto;
+}
+
+.mission-content p {
+    padding: 20px;
+    text-align: left;
+    color: #333333;
 }
 
 .mission-content-image-container {
@@ -149,14 +165,11 @@ ul#menu {
     color: #666666;
     text-transform: capitalize;
 }
-.mission-content p {
-    padding: 27px;
-    text-align: left;
-    color: #333333;
-}
+
 .mission-content span {
   margin-left: 225px;
 }
+
 .mission-content span a {
     background: #fff none repeat scroll 0 0;
     border: 1px solid #ccc;
@@ -167,22 +180,24 @@ ul#menu {
     text-decoration: none;
     text-transform: capitalize;
 }
+
 .mission-content span a:hover {
     background: #E6E6E6 none repeat scroll 0 0;
 }
+
 .mission-content > p#missionfr {
     padding: 8px;
 }
 
 
-/* Start Services CSS */
+/* Start Services */
 div#services-area {
     float: left;
     width: 100%;
-    
 }
+
 .my-service{
-  margin:65px 0px 85px;
+  margin:65px 0px 65px;
 }
 
 section#services-area {
@@ -191,25 +206,32 @@ section#services-area {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  height: 800px;
 }
 
 .service  h1 {
   color: #000;
+  font-size: 4em;
   text-transform: capitalize;
   text-shadow: 2px 2px #40475A;
+  padding-top: 50px;
   margin-bottom: 20px;
-
 }
 
-.service > p {
+.services-section {
+  max-height: 100%;
+  height: 500px;
+}
+
+.service p {
     color: #000;
     font-size: 25px;
     padding: 40px 0px;
 }
 
-/* End Services CSS */
 
-/* Start Post Row CSS */
+
+/* Start Post Row */
 #row{
   margin: 60px 0;
 }
@@ -218,28 +240,33 @@ h2 {
     color: #666;
 }
 
-section#postrow-area {
+#postrow-area {
   background-color: #f2f2f2;
   background-image: url("../img/PostRow.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 600px;
   max-width: 100%;
+  height: 420px;
 }
 
 .postrow-header {
   color: #76db36;
   font-size: 100px;
   position: absolute;
-  margin-top:250px;
+  padding-top: 100px;
   left: 0;
   top: 50%;
   width: 100%;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 3px 3px #000;
+}
+
+.postrow-subtitle {
+  font-size: 2em;
+  padding-bottom: 10px;
 }
 
 .postrow-content  p {
@@ -267,10 +294,27 @@ section#postrow-area {
     background: #E6E6E6 none repeat scroll 0 0;
 }
 
+.postrow-box {
+  background-color: #f2f2f2;
+  max-width: 100%;
+}
+
+.postrow-box-description {
+  padding: 30px 30px 15px 30px;
+}
+
+.postrow-box-p {
+  max-height: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.postrow-box-p:last-child {
+  margin-bottom: 0;
+}
 
 
-/* Start Lil' Bastards Dropdown CSS */
-
+/* Post Row Dropdown */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -291,46 +335,50 @@ section#postrow-area {
 }
 
 .spidermites {
-    width: 600px;
-    padding: 15px;
+    width: 400px;
     text-align: center;
 }
 
 .spidermites_image {
-  width: 500px;
+  width: 400px;
 }
 
 
 
-/* Start Contact CSS */
+/* Start Contact */
+#section5 {
+  height: 466px;
+}
+
 section#contact-area {
   background-image: url("../img/LeafArt2.jpg");
   background-position: center center;
-  background-size: cover;  
-  background-attachment: fixed; 
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .contact-content h1 {
-    color: #000;
-    text-transform: capitalize;
-    margin-bottom: 30px;
+  color: #000;
+  font-size: 4em;
+  text-transform: capitalize;
+  margin-bottom: 30px;
   text-shadow: 2px 2px #40475A;
 }
 
 .contact-content p {
-    background: rgba(242, 242, 242, 0.4) none repeat scroll 0 0;
-    border-radius: 5px;
-    color: #000;
-    font-size: 16px;
-    margin-bottom: 20px;
-    padding: 20px 15px;
+  background: rgba(242, 242, 242, 0.4) none repeat scroll 0 0;
+  border-radius: 5px;
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 20px 15px;
 }
 
 .contact-form-left { padding-left: 0; }
 .contact-form-right { padding-right: 0; }
 
 input {
-    margin-bottom: 15px;    
+  margin-bottom: 15px;
 }
 
 .form-control {
@@ -338,101 +386,80 @@ input {
   background: rgba(242, 242, 242, 0.4);
 }
 
-.form-group button {
+.submit-btn .btn-default {
   background: #40475A none repeat scroll 0 0;
   color: #fff;
   margin-top: 20px;
-  padding: 10px 30px;
+  padding: 5px 30px;
   font-size: 18px;
   border-radius:10px;
   -webkit-transition: all 0.3s ease;
           transition: all 0.3s ease;
 }
 
-
-
-/* Start Footer CSS */
-.footer-content h1 h4{
-    color: #666;
-    font-size: 32px;
-    font-style: italic;
-    margin-bottom: 20px;
-    margin-top: 35px;
+.submit-btn .btn-default a:hover{
+  background: #ccc;
 }
-.aside {
+
+
+/* Start Footer */
+#footer-area.container.row {
+  height: 334px;
+}
+
+.footer-content h1 h4{
+  color: #666;
+  font-size: 32px;
+  font-style: italic;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+.excluding {
   color: #999;
   font-style: italic;
 }
 
-.aside a {
+.excluding a {
   color: limegreen;
 }
 
 .copy {
-    color: #666;
-    font-size: 12px;
-    margin-bottom: 30px;
-    margin-top: 10px;
+  color: #666;
+  font-size: 12px;
+  margin-bottom: 20px;
+  margin-top: 30px;
 }
 
-/* Slick Nav CSS */
+
+/* Slick Nav */
 .slicknav_menu {
-    display:none;
+  display:none;
 }
 
 .slicknav_nav a {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .slicknav_menu {
   background: #40475a none repeat scroll 0 0;
 }
 
-/* Scroll To top */
-/* Image style */
+
+/* Scroll To Top */
+/* Image Style */
 #scrollUp {
-    background-image: url("../img/top.png");
-    bottom: 20px;
-    right: 20px;
-    width: 38px;    /* Width of image */
-    height: 38px;   /* Height of image */
+  background-image: url("../img/top.png");
+  bottom: 20px;
+  right: 20px;
+  width: 38px;    /* Width of image */
+  height: 38px;   /* Height of image */
 }
 
 
-
-.mission-section {
-    height: 100%;
-    padding-top: 70px;
-}
-
-.services-section {
-    height: 100%;
-   /* padding-top: 150px;*/
-}
-
-.postrow-box {
-  background-color: #f2f2f2;
-  max-width: 100%;
-}
-
-.postrow-box-description {
-  padding: 30px;
-}
-
-.postrow-box-p {
-  max-height: 100%;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-.postrow-box-p:last-child {
-  margin-bottom: 0;
-}
-
+/* Contact Section */
 .contact-section {
-    height: 100%;
-    padding-top: 80px;
-    padding-bottom: 60px;
+  height: 100%;
+  padding-bottom: 60px;
 }
 
 .form-control {
@@ -440,71 +467,73 @@ input {
 }
 
 .contact-section .container {
-  max-width: 750px;
+height: 334px;
 }
 
-/*https://css-tricks.com/snippets/css/style-placeholder-text/*/
 .form-control::-webkit-input-placeholder {
    color: black;
 }
 
 .form-control:-moz-placeholder { /* Firefox 18- */
-   color: black;  
+   color: black;
 }
 
 .form-control::-moz-placeholder {  /* Firefox 19+ */
-   color: black;  
+   color: black;
 }
 
-.form-control:-ms-input-placeholder {  
-   color: black;  
+.form-control:-ms-input-placeholder {
+   color: black;
 }
 
-/*************navigation******************/
+.submit-btn {
+  margin: 0 auto;
+}
 
- .navbar-inverse {
-    background-color: #1a781b;
-    border-color: #76db36;
+
+/* Navigation */
+.navbar-inverse {
+  background-color: #1a781b;
+  border-color: #76db36;
 }
 
 .navbar-nav>li {
-    display: inline-block;
-    padding: 10px;
+  display: inline-block;
+  padding: 10px;
 }
 
 .navbar-inverse .navbar-nav>li>a {
-    background: #1a781b none repeat scroll 0 0;
-    border: 1px solid #76db36;
-    color: #fff ;
-    font-size: 20px;
-    padding: 15px 25px;
-    text-decoration: none;
-    text-transform: capitalize;
-    -webkit-transition: all 0.3s ease;
-            transition: all 0.3s ease;
+  background: #1a781b none repeat scroll 0 0;
+  border: 1px solid #76db36;
+  color: #fff ;
+  font-size: 20px;
+  padding: 15px 25px;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 
 .navbar-inverse .navbar-nav > li > a.current,
 .navbar-inverse .navbar-nav > li > a:hover {
-        background: #76db36;
-        color: black;
+  background: #76db36;
+  color: black;
 }
 
 .navbar .navbar-nav {
-    display: inline-block;
-    float: none;
+  display: inline-block;
+  float: none;
 }
 
 .navbar .navbar-collapse {
-    text-align: center;
+  text-align: center;
 }
 
-/* Media Queries
-----------------------*/
 
+/*--- Media Queries ---*/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .mission-content > p#missionfr {
+  .mission-content  p#missionfr {
     padding: 18px;
   }
 
@@ -513,16 +542,34 @@ input {
   }
 }
 
-/*    Tablet Layout: 768px. */
 
+/***  Tablet Layout: 768px ***/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .mission-content p {
     margin-bottom: 21px;
     padding: 27px;
   }
 
-  .mission-content span { margin-left: 0; }
-  .service > p { font-size: 18px; }
+  .mission-content span {
+    margin-left: 0;
+  }
+
+  #services-area container {
+    height: 400px;
+  }
+
+  .my-service {
+    margin: 0px;
+  }
+
+  .service h1 {
+    padding-top: 100px;
+  }
+
+  .service  p {
+    font-size: 18px;
+  }
+
   .contact-content p {
     font-size: 18px;
     padding: 15px 0;
@@ -546,9 +593,8 @@ input {
 }
 
 @media only screen and (max-width: 767px) {
-  
   header {
-    height: 75vh;
+    height: 30vh;
     padding: 0 15px;
     background-repeat: no-repeat;
     display: -webkit-flex;
@@ -564,10 +610,56 @@ input {
     -ms-flex-pack: center;
      justify-content: center;
   }
-   
 
-  ul#menu { display:none; }
+  ul#menu {
+    display:none;
+  }
 
+  .intro-section {
+    padding-top: 0px;
+    height: 500px;
+  }
+
+  .header-content {
+    height: 300px;
+  }
+
+  .header-content h1,
+  .header-content h4 {
+    font-size: 3.5em;
+  }
+
+  .my-service {
+    margin-top: 30px;
+  }
+
+  .service {
+    max-height: 100%;
+  }
+
+  .service h1 {
+    padding-top: 0px;
+  }
+
+  .service p {
+    padding-top: 0px;
+  }
+
+  .postrow-header {
+    font-size: 3em;
+    padding-top: 0px;
+  }
+
+  .contact-section {
+    padding-top: 0px;
+  }
+
+  .submit-btn .btn-default {
+    margin-top: 0px;
+  }
+
+
+  /* Navbar */
   .slicknav_menu {
     display: block;
     position: fixed;
@@ -594,11 +686,11 @@ input {
   .navbar-nav>li { display: block; }
   .navbar-inverse {
     background: none;
-    border: none; 
+    border: none;
   }
 
   .navbar-inverse .navbar-toggle { background-color: #333; }
-  .navbar-inverse .navbar-collapse, 
+  .navbar-inverse .navbar-collapse,
   .navbar-inverse .navbar-form {
     background-color: #49505F;
   }
@@ -627,13 +719,13 @@ input {
     padding: 10px 0px;
   }
 
-  .navbar-inverse .navbar-nav>li>a:focus, 
+  .navbar-inverse .navbar-nav>li>a:focus,
   .navbar-inverse .navbar-nav>li>a:hover {
     background-color: #383E4C;
   }
 
-  .navbar-inverse .navbar-nav>.active>a, 
-  .navbar-inverse .navbar-nav>.active>a:focus, 
+  .navbar-inverse .navbar-nav>.active>a,
+  .navbar-inverse .navbar-nav>.active>a:focus,
   .navbar-inverse .navbar-nav>.active>a:hover {
     background: #383E4C;
   }
@@ -664,27 +756,31 @@ input {
   .contact-form-right {
     padding-left: 0;
   }
-}
 
-/*    Wide Mobile Layout: 480px. */
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .header-content h1 {
-    font-size: 60px;
-    background-repeat: no-repeat;
+  /*** Wide Mobile Layout: 480px. ***/
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .header-content h1 {
+      font-size: 60px;
+    }
   }
-}
 
-@media only screen and (max-width: 520px) {
-  .col-xxs-12 {
-    width: 100%;
-    background-repeat: no-repeat;
+  @media only screen and (max-width: 520px) {
+    .col-xxs-12 {
+      width: 100%;
+      background-repeat: no-repeat;
+    }
   }
-}
 
-@media only screen and (max-width: 480px) {
-  header { 
-    height: 50vh;
-    background-repeat: no-repeat;
+  @media only screen and (max-width: 480px) {
+    header {
+      height: 30vh;
+      background-repeat: no-repeat;
+    }
+
+    .service p {
+      font-size: 25px;
+    }
   }
+
 }

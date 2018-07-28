@@ -69,7 +69,7 @@ a:hover {
 }
 
 .col-form-label {
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 .submit-btn {
@@ -78,6 +78,10 @@ a:hover {
 
 .form-control {
   border: 1px solid #e83e8c;
+}
+
+.contact-mls {
+
 }
 
 /*** Site Wide and ID's ***/
@@ -101,5 +105,11 @@ h2 {
 
 #footer {
   background-color: #17a2b8;
-  height: 56px;
+  height: 60px;
+  bottom: 0;
+  }
+
+  .p-4 {
+    padding: -24px;
+    padding-bottom: -12px;;
   }

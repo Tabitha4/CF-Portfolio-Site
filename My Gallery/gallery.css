@@ -16,6 +16,10 @@ body {
 	line-height: 30px;
 }
 
+.nav.navbar-nav.navbar-right a:hover {
+	color: #369ABA;
+}
+
 /*** Navbar ***/
 
 .navbar-inverse {
