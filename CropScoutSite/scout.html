@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html>
-	<head>
-  		<meta charset="utf-8"/>
-  		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-  		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<head>
+	  		<meta charset="utf-8"/>
+	  		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	  		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
-   		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'/>
-			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"/>
-   		<link rel="stylesheet" href="css/bootstrap.min.css"/>
-   		<link rel="stylesheet" href="css/scout.css"/>
+	   		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'/>
+				<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"/>
+	   		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	   		<link rel="stylesheet" href="css/scout.css"/>
 
-   		<title>Greenhouse Crop Scout</title>
-	</head>
+	   		<title>Greenhouse Crop Scout</title>
+		</head>
 
 		<body>
-		 		<nav class="navbar navbar-inverse navbar-fixed-top">
-		  			<div class="container">
+		 		<nav class="navbar navbar-inverse navbar-fixed-top" id="my-topnav">
+		  			<div class="container wrapper-container">
 		   					<div class="navbar-header">
-										<button type="button" class="navbar-toggle"></button>
+										<button type="button" class="navbar-toggle">
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+										</button>
 		   					</div>
 		  					<div class="single-page-nav sticky-wrapper" id="tmNavbar">
 		   							<ul class="nav navbar-nav">
@@ -35,12 +39,12 @@
 				<main>
 					 	<div id="section1">
 					  		<div id="header-area" class="intro-section">
-					   				<div class="container">
-												<div class="row">
-						 								<div class="col-sm-12 text-center">
+					   				<div class="container header-container">
+												<div class="row header-rows">
+						 								<div class="col-sm-12 text-center header-column">
 						  									<div class="header-content">
 																		<header>
-						   													<h1>Crop Scout</h1>
+						   													<h1 class="header-title">Crop Scout</h1>
 																		</header>
 						   											<h4>The never ending search for disease and pestilence</h4>
 						  									</div>
@@ -55,31 +59,28 @@
 		 		<section id="section2">
 						<div id="mission-area" class="mission-section">
 								<div class="container">
-										<div class="row text-center inner">
-						   					<div class="col-sm-6">
+										<div class="row text-center mission-content-row">
+						   					<div class="col-xs-6 mission-column1">
 														<div class="mission-content">
 																<div class="mission-content-image-container">
 										 								<img class="mission-content-image" src="img/ShoeStilts.jpg" alt="ShoeStilts"/>
 										 						</div><!-- END SHOE STILTS IMAGE CONTAINER -->
 									 							<h2>Personal Mission</h2>
-									  						<p>To try on these bad boys! How could I not? I warn the grower weekly that one day they might see my head peaking above the crop. He just smiles. Almost daring me I think.<br><br>
+									  						<p>To try on these bad boys! How could I not? I warn the grower weekly that one day they might see my head peaking above the crop.<br><br>
 
-									  						Probably because he knows the terrain better than I,knows that at some point I will hit a hidden rut and fall with much sound and explatives. Still tempting.</p>
-								     						<span><a href="#">read more</a></span>
+									  						Because he knows the terrain better than I,knows that at some point I will hit a hidden rut and fall with much sound and explatives.</p>
 								    				</div><!-- END PERSONAL MISSION -->
 						   					</div><!-- END PERSONAL MISSION COLUMN -->
 
-						  					<div class="col-sm-6">
+						  					<div class="col-xs-6 mission-column2">
 								 						<div class="mission-content">
 								  							<div class="mission-content-image-container">
 								    								<img class="mission-content-image" src="img/BumbleBees.jpg" alt="BumbleBees"/>
 								  							</div><!-- END BUMBLE BEES IMAGE CONTAINER -->
 								  							<h2>Work Mission</h2>
-								   							<p>NOT to get stung by these much needed workers. Greenhouses bring in boxes that house the gives to encourage pollination. More pollination more flowers and so more veggies!<br><br>
+								   							<p>NOT to get stung by these wee workers. Housed in boxes, the bees go about their busy work. More pollination, more flowers and so more veggies!<br><br>
 
 																Unfortunately, they just done't like me in their territory and will let me know by buzzing at my head to get me to move along. It works.</p>
-									 							<span><a href="#">read more</a></span>
-									  						<p id="missionfr"></p>
 								     				</div>
 												</div>
 				 						</div>
@@ -99,7 +100,7 @@
 
 																I can sprinkle predatory bugs to take care of the little bastards that are threatening said crop.<br>
 
-																I am a necessary expense for greenhouses if only to highlight where the bugs are so that they can be somewhat controlled.<br>
+																I am a necessary expense for greenhouses if only to highlight where the bugs are so that they can be somewhat controlled.<br><br>
 																...but they will never totally leave...</p>
 								  					</div>
 								 				</div>
@@ -107,7 +108,6 @@
 		   					</div><!-- END SERVICES CONTAINER -->
 						</div><!-- END SECTION 3 -->
 		  	</section><!-- END SERVICES SECTION -->
-
 
 				<!-- POST ROW SECTION -->
 				<section id="postrow-area" class="postrow-section">
@@ -129,11 +129,11 @@
 			 							<h2 class="postrow-subtitle">Why I hate Post Rows</h2>
 			  						<p class="postrow-box-p">I'll tell you why... S p i d e r  M i t e s. These nasty tenatious little buggers always show up more often then not, in a post row. They tend to lay dormant under the plastic on the floor or up high in the crevices of the posts.</p>
 										<p class="postrow-box-p">They start showing themselves around week three of a crop. You might be excited that you catch them in a spot no bigger than the size of your finger tip, don't be. For even though you douse the little buggers with predatory mites, the very next week they will have multiplied exponentially. From there on it's like playing tag with two people. Never ending.</p>
-										<div class="dropdown">
-												<a href="#" class="content-link" width="100" height="50">Lookie Here!</a>
-								  			<div class="dropdown-content">
+										<div class="dropup">
+												<a href="#" class="dropbtn" width="100" height="50">Lookie Here!</a>
+								  			<div class="dropup-content">
 								   					<div class="spidermites">
-								   							<img class="spidermites_image"src="img/SpiderMites.jpg" alt="Lil' Bastards"/>
+								   							<img class="spidermites-image"src="img/SpiderMites.jpg" alt="Lil' Bastards"/>
 								    						<div>Lil' Buggers</div>
 								   					</div>
 					              </div>
@@ -171,15 +171,15 @@
 												  							<input name="name" type="text" class="form-control" id="name" placeholder="Name"/>
 												  							<input type="email" name="email" class="form-control" id="mail" placeholder="Email"/>
 												  							<input name="subject" type="text" class="form-control" id="subject" placeholder="Subject"/>
-												 						</div><!-- END INPUTS -->
+												 						</div>
 																</div><!-- END INPUT COLUMNS -->
 									   						<div class="col-sm-6 contact-form-right">
 									  								<div class="form-group">
 									 											<textarea name="message" rows="6" class="form-control" id="comment" placeholder="Tell me something..."></textarea>
-									  								</div><!-- END MESSAGE -->
+									  								</div>
 									   						</div><!-- END MESSAGE COLUMN -->
-																<div class="col-sm-12 submit-btn text-center">
-																		<button type="submit" class="btn btn-default">Send</button>
+																<div class="submit-btn text-center">
+																		<button type="submit" class="btn btn-default" id="submit">Send</button>
 																</div>
 														</form><!-- END CONTACT FORM -->
 							   				</div><!-- END FORM COLUMN -->
@@ -191,19 +191,21 @@
 
 				<!-- FOOTER SECTION -->
 		 		<footer id="footer-area">
-		  			<div class="container">
-			   				<div class="row text-center">
-										<div class="col-sm-12">
+		  			<div class="container footer-container">
+			   				<div class="row text-center footer-rows">
+										<div class="col-sm-12 footer-column">
 						  					<h1 class="footer-content">I strive to learn something new each and every day</h1>
-												<h4 class="footer-content">All of these are my own photos</h4>
+												<div>
+												<p class="footer-content">All of these are my own photos</p>
 					       				<p class="excluding">Excluding the Spider Mites photo, courtesy of <a href="https://koppert.ca" target="_blank">Koppert Biological Systems</a></p>
+											</div>
 										</div>
 										<div class="col-sm-12 text-center">
 											<p class="copy">Copyright © 2017 Tab Codes</p>
 										</div>
-			   				</div>
-		  			</div>
-		  	</footer><!-- END FOOTER -->
+			   				</div><!-- END FOOTER ROWS-->
+		  			</div><!-- END FOOTER CONTAINER-->
+		  	</footer><!-- END FOOTER AREA -->
 
 
 				<!-- JAVASCRIPT -->

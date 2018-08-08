@@ -10,6 +10,11 @@
 }
 
 #submit-button {
-  margin-top: 20px;
+  margin: 0 auto;
   background-color: #46B8B8;
+}
+
+.madlibColumn {
+  line-height: 4;
+  padding-top: 10px;
 }

@@ -7,67 +7,67 @@
     </head>
     <body>
 
-        <main>
-            <h1 class="main-title"><i class="java">Java</i>Script Madlib</h1>
-            <section class="section columns">
-                <form id="mainForm" class="column is-half">
-                    <fieldset>
-                          <div class="field">
-                              <label class="label noun">A noun</label>
-                              <div class="control">
-                                <input id="noun1" class="input" type="text" placeholder="A noun is a person place or thing" autofocus required>
-                              </div>
-                          </div>
+        <h1 class="main-title"><i class="java">Java</i>Script Madlib</h1>
+        <section class="section columns">
 
-                          <div class="field noun">
-                              <label class="label">A noun</label>
-                              <div class="control">
-                                <input id="noun2" class="input" type="text" placeholder="A noun is a person place or thing" autofocus required>
-                              </div>
-                          </div>
+            <form id="mainForm" class="column is-half">
+                <div class="field">
+                    <label class="label noun">A noun</label>
+                    <div class="control">
+                        <input id="noun1" class="input" type="text" placeholder="A noun is a person place or thing" autofocus required>
+                    </div>
+                </div>
 
-                          <div class="field adjective">
-                              <label class="label">An adjective</label>
-                              <div class="control">
-                                <input id="adjective1" class="input" type="text" placeholder="An adjective discribes a noun" autofocus required>
-                              </div>
-                          </div>
+                <div class="field noun">
+                    <label class="label">A noun</label>
+                    <div class="control">
+                        <input id="noun2" class="input" type="text" placeholder="A noun is a person place or thing" autofocus required>
+                    </div>
+                </div>
 
-                          <div class="field adjective">
-                              <label class="label">An adjective</label>
-                              <div class="control">
-                                <input id="adjective2" class="input" type="text" placeholder="An adjective discribes a noun" autofocus required>
-                              </div>
-                          </div>
+                <div class="field adjective">
+                    <label class="label">An adjective</label>
+                    <div class="control">
+                        <input id="adjective1" class="input" type="text" placeholder="An adjective discribes a noun" autofocus required>
+                    </div>
+                </div>
 
-                        <div class="field">
-                            <label class="label plural-noun">Plural Noun</label>
-                            <div class="control">
-                              <input id="pluralNoun1" class="input" type="text" placeholder="Persons Places Things" autofocus required>
-                            </div>
-                        </div>
+                <div class="field adjective">
+                    <label class="label">An adjective</label>
+                    <div class="control">
+                        <input id="adjective2" class="input" type="text" placeholder="An adjective discribes a noun" autofocus required>
+                    </div>
+                </div>
 
-                        <div class="field">
-                            <label class="label plural-noun">Plural Noun</label>
-                            <div class="control">
-                              <input id="pluralNoun2" class="input" type="text" placeholder="Persons Places Things" autofocus required>
-                            </div>
-                        </div>
+                <div class="field plural-noun">
+                    <label class="label plural-noun">Plural Noun</label>
+                    <div class="control">
+                        <input id="pluralNoun1" class="input" type="text" placeholder="Persons Places Things" autofocus required>
+                    </div>
+                </div>
 
-                        <div class="field game">
-                            <label class="label">A Game</label>
-                            <div class="control">
-                              <input id="game" class="input" type="text" placeholder="Name of a Game" autofocus required>
-                            </div>
-                        </div>
+                <div class="field">
+                    <label class="label plural-noun">Plural Noun</label>
+                    <div class="control">
+                        <input id="pluralNoun2" class="input" type="text" placeholder="Persons Places Things" autofocus required>
+                    </div>
+                </div>
 
-                        <div class="control submit">
-                            <button id="submit-button" class="button is-primary" type="button">Submit</button>
-                        </div>
-                    </fieldset>
-                </form>
-            </section>
-        </main>
+                <div class="field game">
+                    <label class="label game-label">A Game</label>
+                    <div class="control">
+                        <input id="game" class="input" type="text" placeholder="Name of a Game" autofocus required>
+                    </div>
+                </div>
+
+                <div class="control submit">
+                    <button id="submit-button" class="button is-primary">Submit</button>
+                </div>
+            </form>
+
+            <div id="madlibContainer" class="column madlibColumn"></div>
+
+        </section>
 
         <script src="./main.js"></script>
     </body>
