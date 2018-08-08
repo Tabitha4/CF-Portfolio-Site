@@ -2,7 +2,7 @@ var works = [
 	{
     title: "",
     pic: "img/cropScout.jpg",
-    url: "http://5a346222a114771d0057ca2a.coordinator-seams-12282.bitballoon.com/cropscoutsite/scout"
+    url: "/CropScoutSite/scout.html"
   },
 
   {
@@ -40,7 +40,7 @@ var works = [
     pic: "img/plainCoffee1-isaac-benhesed-atUnsplash.jpg",
     url: "#"
   },
-	
+
   {
     title: "Project 8 Coming Soon",
     pic: "img/plainCoffee1-isaac-benhesed-atUnsplash.jpg",
