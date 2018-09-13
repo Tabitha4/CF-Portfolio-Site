@@ -38,6 +38,7 @@ body {
 	color: #FFF;
 	background-color: #222729;
 	text-align: center;
+	margin-top: 20px;
 }
 
 /*** Main Section ***/
@@ -47,6 +48,7 @@ body {
 }
 
 .captions {
+	padding-top: 10px;
 	padding-bottom: 40px;
 	font-size: 1.5em;
 }
@@ -61,7 +63,7 @@ body {
 .about-me {
 	color: #43BAE0;
 	font-size: 4em;
-	padding-bottom: 50px;
+	padding-bottom: 35px;
 }
 
 .sotonera {
@@ -102,6 +104,7 @@ body {
 
 #contact textarea {
 	resize: none;
+	
 }
 
 #contact button[type="submit"] {
@@ -147,7 +150,7 @@ body {
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 600px;
+	height: 620px;
 }
 
 .contact-form {
@@ -157,6 +160,7 @@ body {
 
 .say-hello {
 	padding-top: 40px;
+	padding-bottom: 20px;
 	color: #222729;
 	font-size: 3em;
 }
@@ -169,7 +173,7 @@ body {
 /*** Footer Section ***/
 
 #footer-area {
-	padding-top: 60px;
+	padding-top: 10px;
 }
 
 .social-icons a{
@@ -183,4 +187,49 @@ body {
 
 .copy {
 	color: #43BAE0;
+}
+
+/*--- Media Queries ---*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.row {
+		margin-right: 0px;
+		margin-left: 0px;
+		width: 920px;
+		padding-left: 15px;
+	}
+
+	.jumbotron {
+		margin-top: 0px;
+		padding-top: 28px;
+		padding-bottom: 28px;
+	}
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.about-section {
+		padding-top: 60px;
+	}
+
+	.gallery-container {
+		padding-top: 20px;
+	}
+
+
+@media only screen and (max-width: 767px) {
+	.jumbotron {
+		margin-top: 0px;
+		margin-bottom: 10px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	.about-section {
+		padding-top: 55px;
+	}
+
+}
+
+
 }

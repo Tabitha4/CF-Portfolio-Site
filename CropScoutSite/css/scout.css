@@ -900,7 +900,7 @@ p.footer-content {
     z-index: 999;
     background:none;
   }
-
+}
 
   /*** Wide Mobile Layout: 480px. ***/
   @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -945,5 +945,3 @@ p.footer-content {
       font-size: 25px;
     }
   }
-
-}
